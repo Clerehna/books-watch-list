@@ -1,0 +1,8 @@
+<div class="bookmar_form">
+<h1>Ajouter un marque-livre</h1>
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.input :comment %>
+    <%= f.association :book %>
+    <%= f.submit "Ajouter" %>
+  <% end %>
+</div>
