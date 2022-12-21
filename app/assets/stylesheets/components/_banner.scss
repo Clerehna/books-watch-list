@@ -1,0 +1,24 @@
+.banner {
+  background-image:
+  linear-gradient(to top, rgba(238, 238, 238, 0.9), rgba(213, 213, 213, 0.122)),url(banner.png);
+  background-size: cover;
+  background-position: center;
+  padding: 150px 20px;
+}
+
+.banner h1 {
+  margin: 0;
+  color: black;
+  text-shadow: 1px 1px 3px rgba(183, 183, 183, 0.2);
+  font-family:'Mr Dafoe';
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 25px;
+  color: rgb(72, 72, 72);
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(183, 183, 183, 0.2);
+  font-family: 'Parisienne';
+}
