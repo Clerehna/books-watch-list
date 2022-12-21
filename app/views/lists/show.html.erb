@@ -1,19 +1,15 @@
 <div class="container">
   <h1><%= @list.name %></h1>
 
-<div class="card-product">
-  <% @list.books.each do |book| %>
+<% @list.books.each do |book| %>
+  <div class="card-product">
     <%= book.book_cover %>
     <div class="card-product-infos">
       <h2><%= book.name %> - <%= book.author %></h2>
       <p><%= book.description %></p>
     </div>
-  <% end %>
-</div>
+  </div>
+<% end %>
 
-  <%# <ul><% @list.books.each do |book| %>
-    <%# <li><%= book.name %> <%# <%= book.author %><%#</li> %>
-    <%# <% end %>
-  <%# </ul> %>
   <%= render "shared/bookmark_form" %>
 </div>
